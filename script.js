@@ -26,7 +26,7 @@ const Counter = React.createClass({
     }
 });
 
-const counters = React.createClass({
+const Counters = React.createClass({
     render: function () {
         return React.createElement('div', {},
             React.createElement(Counter),
@@ -37,5 +37,5 @@ const counters = React.createClass({
     }
 });
 
-const item = React.createElement(counters);
+const item = React.createElement(Counters);
 ReactDOM.render(item, document.getElementById('app'));
